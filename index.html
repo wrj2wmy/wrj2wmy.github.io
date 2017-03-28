@@ -20,12 +20,153 @@
     margin-left: 0px !important;
 }
 
-*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}html,body{height:100%;font-size:0;}body{background-color:#fff;font-family:Arial,sans-serif;margin:0;padding:10px 10px 10px 7px;}@media only screen and (min-width:0){.content,.msg{font-size:14px;}}@media only screen and (min-width:992px){.content,.msg{font-size:14.5px;}}@media only screen and (min-width:1200px){.content,.msg{font-size:15px;}}.clearfix{clear:both;}.hide{display:none!important;}.content{margin-top:40px;min-height:calc(100% - 65px);}.search-bar{position:fixed;width:calc(100% - 17px);left:7px;top:10px;}.search-control{width:100%;height:38px;line-height:38px;border:1px solid #E0E0E0;outline:none;font-size:15px;color:#757575;padding:0 35px 0 5px;border-radius:3px;}.search-control:focus{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}.search.icon{color:#000;position:absolute;right:20px;top:12px;width:12px;height:12px;border:solid 1px #9E9E9E;border-radius:100%;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}.search.icon:before{content:'';position:absolute;top:12px;left:5px;height:6px;width:1px;background-color:#9E9E9E;}.table{display:table;border-collapse:collapse;min-width:30%;}.table-caption{display:table-caption;border:none;padding:15px 5px 5px 5px;text-align:left;vertical-align:middle;font-weight:bold;}.table-row-group{display:table-row-group;}.table-row{display:table-row;}.table-row .table-cell:first-child,.table.clue .table-row .table-cell:nth-child(2){white-space:nowrap;vertical-align:top;}.table-cell{display:table-cell;padding:5px;text-align:left;vertical-align:middle;}.chapter-header .table-cell{padding-top:10px;font-weight:bolder;}.table-row.chapter-header{border-bottom:1px solid #d0d0d0;}span.light{color:#dd4b39;}.msg{color:#a94442;padding:50px 15px;margin-top: 60px;border:1px solid transparent;border-radius:4px;background-color:#f2dede;border-color:#ebccd1;}footer{padding:5px;text-align:center;}footer a{color:#787a7d;font-size:12px;line-height:21px;}footer a:hover{text-decoration:underline;}.suggest{text-decoration:none;position:absolute;left:10px;}.copy-right{color:#787a7d;font-size:12px;line-height:21px;}em.mode{color:#ff0000;}
+*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}html,body{height:100%;font-size:0;}body{background-color:#fff;font-family:Arial,sans-serif;margin:0;padding:10px 10px 10px 7px;}@media only screen and (min-width:0){.content,.search-banner,.msg{font-size:14px;}}@media only screen and (min-width:992px){.content,.search-banner,.msg{font-size:14.5px;}}@media only screen and (min-width:1200px){.content,.search-banner,.msg{font-size:15px;}}.clearfix{clear:both;}.hide{display:none!important;}.content{margin-top:40px;min-height:calc(100% - 65px);}.search-bar{position:fixed;width:calc(100% - 17px);left:7px;top:10px;}.search-control{width:100%;height:38px;line-height:38px;border:1px solid #E0E0E0;outline:none;font-size:15px;color:#757575;padding:0 35px 0 5px;border-radius:3px;}.search-control:focus{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}.search.icon{color:#000;position:absolute;right:20px;top:12px;width:12px;height:12px;border:solid 1px #9E9E9E;border-radius:100%;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}.search.icon:before{content:'';position:absolute;top:12px;left:5px;height:6px;width:1px;background-color:#9E9E9E;}.table{display:table;border-collapse:collapse;min-width:30%;}.table-caption{display:table-caption;border:none;padding:15px 5px 5px 5px;text-align:left;vertical-align:middle;font-weight:bold;}.table-row-group{display:table-row-group;}.table-row{display:table-row;}.table-row .table-cell:first-child,.table.clue .table-row .table-cell:nth-child(2){white-space:nowrap;vertical-align:top;}.table-cell{display:table-cell;padding:5px;text-align:left;vertical-align:middle;}.chapter-header .table-cell{padding-top:10px;font-weight:bolder;}.table-row.chapter-header{border-bottom:1px solid #d0d0d0;}span.light{color:#dd4b39;}.msg{color:#a94442;padding:50px 15px;margin-top: 60px;border:1px solid transparent;border-radius:4px;background-color:#f2dede;border-color:#ebccd1;}.search-banner{padding:20px 15px 20px 15px;margin-top: 60px;border:1px solid transparent;border-radius:4px;background-color:#dfe7f2;border-color:#efe8ff;}.search-banner .table-cell{width:66px;}.search-header .table-cell{font-weight: bolder;}.button-n{color:#787a7d;}.button-r{color:#4da7dc;}.button-sr{color:purple;}.button-ssr{color:orange;}footer{padding:5px;text-align:center;}footer a{color:#787a7d;font-size:12px;line-height:21px;}footer a:hover{text-decoration:underline;}.suggest{text-decoration:none;position:absolute;left:10px;}.copy-right{color:#787a7d;font-size:12px;line-height:21px;}em.mode{color:#ff0000;}
 </style></head><body>　　
 	<meta name="author" content="Spiritwrj">
 	<title>悬赏封印查询助手</title>
-	<div class="msg hide">
-
+	<div class="msg hide"></div>
+	<div class="search-banner">
+		<div class="table-row-group">
+			<div class="table-row search-header">
+				<div class="table-cell button-n" onclick="show('n')">N</div>
+				<div class="table-cell button-r" onclick="show('r')">R</div>
+				<div class="table-cell button-sr" onclick="show('sr')">SR</div>
+				<div class="table-cell button-ssr" onclick="show('ssr')">SSR</div>
+				<div class="table-cell " onclick="search(null)">ALL</div>
+			</div>
+		</div>
+		<div class="hero-n">
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-n" onclick="search('赤舌')">赤舌</div>
+					<div class="table-cell button-n" onclick="search('灯笼鬼')">灯笼鬼</div>
+					<div class="table-cell button-n" onclick="search('盗墓小鬼')">盗墓小鬼</div>
+					<div class="table-cell button-n" onclick="search('寄生魂')">寄生魂</div>
+					<div class="table-cell button-n" onclick="search('涂壁')">涂壁</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-n" onclick="search('天邪鬼黄')">天邪鬼黄</div>
+					<div class="table-cell button-n" onclick="search('天邪鬼赤')">天邪鬼赤</div>
+					<div class="table-cell button-n" onclick="search('天邪鬼绿')">天邪鬼绿</div>
+					<div class="table-cell button-n" onclick="search('天邪鬼青')">天邪鬼青</div>
+					<div class="table-cell button-n" onclick="search('唐纸伞妖')">唐纸伞妖</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-n" onclick="search('提灯小僧')">提灯小僧</div>
+					<div class="table-cell button-n" onclick="search('帚神')">帚神</div>
+					<div class="table-cell button-n" onclick="search('跳跳犬')">跳跳犬</div>
+					<div class="table-cell button-n" onclick="search('黑豹')">黑豹</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-r hide">
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-r" onclick="search('丑时之女')">丑时之女</div>
+					<div class="table-cell button-r" onclick="search('独眼小僧')">独眼小僧</div>
+					<div class="table-cell button-r" onclick="search('饿鬼')">饿鬼</div>
+					<div class="table-cell button-r" onclick="search('管狐')">管狐</div>
+					<div class="table-cell button-r" onclick="search('兵俑')">兵俑</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-r" onclick="search('蝴蝶精')">蝴蝶精</div>
+					<div class="table-cell button-r" onclick="search('河童')">河童</div>
+					<div class="table-cell button-r" onclick="search('觉')">觉</div>
+					<div class="table-cell button-r" onclick="search('狸猫')">狸猫</div>
+					<div class="table-cell button-r" onclick="search('鲤鱼精')">鲤鱼精</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-r" onclick="search('青蛙瓷器')">青蛙瓷器</div>
+					<div class="table-cell button-r" onclick="search('山童')">山童</div>
+					<div class="table-cell button-r" onclick="search('山兔')">山兔</div>
+					<div class="table-cell button-r" onclick="search('食发鬼')">食发鬼</div>
+					<div class="table-cell button-r" onclick="search('三尾狐')">三尾狐</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-r" onclick="search('首无')">首无</div>
+					<div class="table-cell button-r" onclick="search('童男')">童男</div>
+					<div class="table-cell button-r" onclick="search('童女')">童女</div>
+					<div class="table-cell button-r" onclick="search('铁鼠')">铁鼠</div>
+					<div class="table-cell button-r" onclick="search('巫蛊师')">巫蛊师</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-r" onclick="search('武士之灵')">武士之灵</div>
+					<div class="table-cell button-r" onclick="search('鸦天狗')">鸦天狗</div>
+					<div class="table-cell button-r" onclick="search('萤草')">萤草</div>
+					<div class="table-cell button-r" onclick="search('雨女')">雨女</div>
+					<div class="table-cell button-r" onclick="search('座敷童子')">座敷童子</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-r" onclick="search('椒图')">椒图</div>
+					<div class="table-cell button-r" onclick="search('九命猫')">九命猫</div>
+					<div class="table-cell button-r" onclick="search('跳跳妹妹')">跳跳妹妹</div>
+					<div class="table-cell button-r" onclick="search('跳跳弟弟')">跳跳弟弟</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-sr hide">
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-sr" onclick="search('二口女')">二口女</div>
+					<div class="table-cell button-sr" onclick="search('凤凰火')">凤凰火</div>
+					<div class="table-cell button-sr" onclick="search('鬼使黑')">鬼使黑</div>
+					<div class="table-cell button-sr" onclick="search('鬼使白')">鬼使白</div>
+					<div class="table-cell button-sr" onclick="search('骨女')">骨女</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-sr" onclick="search('鬼女红叶')">鬼女红叶</div>
+					<div class="table-cell button-sr" onclick="search('海坊主')">海坊主</div>
+					<div class="table-cell button-sr" onclick="search('傀儡师')">傀儡师</div>
+					<div class="table-cell button-sr" onclick="search('镰鼬')">镰鼬</div>
+					<div class="table-cell button-sr" onclick="search('孟婆')">孟婆</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-sr" onclick="search('判官')">判官</div>
+					<div class="table-cell button-sr" onclick="search('犬神')">犬神</div>
+					<div class="table-cell button-sr" onclick="search('食梦貘')">食梦貘</div>
+					<div class="table-cell button-sr" onclick="search('跳跳哥哥')">跳跳哥哥</div>
+					<div class="table-cell button-sr" onclick="search('桃花妖')">桃花妖</div>
+				</div>
+			</div>
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-sr" onclick="search('雪女')">雪女</div>
+					<div class="table-cell button-sr" onclick="search('吸血姬')">吸血姬</div>
+					<div class="table-cell button-sr" onclick="search('樱花妖')">樱花妖</div>
+					<div class="table-cell button-sr" onclick="search('妖琴师')">妖琴师</div>
+					<div class="table-cell button-sr" onclick="search('妖狐')">妖狐</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-ssr hide">
+			<div class="table-row-group">
+				<div class="table-row">
+					<div class="table-cell button-ssr" onclick="search('茨木童子')">茨木童子</div>
+					<div class="table-cell button-ssr" onclick="search('大天狗')">大天狗</div>
+					<div class="table-cell button-ssr" onclick="search('荒川之主')">荒川之主</div>
+					<div class="table-cell button-ssr" onclick="search('酒吞童子')">酒吞童子</div>
+					<div class="table-cell button-ssr" onclick="search('阎魔')">阎魔</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="search-bar">
 		<input class="search-control" placeholder="输入线索或者妖怪名字" id="searchItem" oninput="search()">
@@ -1732,7 +1873,7 @@
 				</div>
 				<div class="table-row">
 					<div class="table-cell">一回合</div>
-					<div class="table-cell">廉鼬×1 黑豹×3</div>
+					<div class="table-cell">镰鼬×1 黑豹×3</div>
 				</div>
 				<div class="table-row">
 					<div class="table-cell">二回合</div>
@@ -2285,6 +2426,6 @@
 		<span class="hide">版权所有，禁止任何形式的二次开发及发布，侵权必究。</span>
 	</footer>
 	<script type="text/javascript">
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 Y=h.1n||12.1l.18,1a=[\'O.H.D\',\'1k.H.D\'];2 N=1c(1a,Y);8(!N){2 s="<p>本页面禁止被内嵌。</p>";s+="<p>请点击下方链接访问源页面。</p>";s+="<p><a 18=\'1d://O.H.D\' 1f=\'1g\'>悬赏封印查询网页版</a></p>";h.q(".s").k=s;h.q(".s").6.m("3");h.q(".S-1i").6.v("3");h.q(".B").6.v("3");12.1j(\'1d://O.H.D\')};o S(a){2 b=a||h.q("#1q").1m,11=h.7(".B .4 > .4-j-E > .4-j > .4-w");8(b.u(\'*\')>-1||b.u(\'x\')>-1){b=b.P(\'*\').K(\'×\').P(\'x\').K(\'×\')}C(h.q(".B"));W();8(b&&b.V()){2 c=U(b.V());19(c,11)}}o U(a){2 b=[a],R=h.7(".B .4.T > .4-j-E > .4-j > .4-w.T-w");9(2 c=0;c<R.5;c++){2 d=R[c],X=d.k;8(X.u(a)>-1){2 e=d.1p.7(".4-w")[1].k;8(b.u(e)===-1){b.10(e)}}}Q b}o 19(a,b){9(2 i=0;i<b.5;i++){2 c=b[i],k=c.k,F=13(k,a);8(F.M){c.6.m("3");9(2 d=0;d<F.G.5;d++){2 e=F.G[d],16="<I 1h=\'J\'>"+e+"</I>";c.k=k.P(e).K(16)}}z 8(c.7("I.J").5===0){c.6.v("3")}}1b()}o 1b(){2 a=h.7(".B .4");9(2 t=0;t<a.5;t++){2 b=a[t],L=b.7(".4-j-E");9(2 g=0;g<L.5;g++){2 c=L[g],y=c.7(".4-j");9(2 r=0;r<y.5;r++){2 d=y[r];8(d.7(".4-w:A(.3)").5===0){d.6.v("3")}z{d.6.m("3");C(d)}}8(c.7(".4-j:A(.3)").5===0){c.6.v("3")}z{c.6.m("3");2 e=c.q(".4-j.17-15"),$14=c.7(".4-j:A(.17-15)");8(e.6.N("3")&&$14[0].7(".4-w")[0].k.u("回合")===-1){e.6.m("3");C(e)}z{9(2 f=0;f<y.5;f++){2 d=y[f];d.6.m("3");C(d)}}}}8(b.7(".4-j-E:A(.3)").5===0){b.6.v("3")}z{b.6.m("3")}}}o C(a){2 b=a.7(".3:A(.s)");9(2 n=0;n<b.5;n++){b[n].6.m("3")}}o W(){2 a=h.7("I.J");9(2 l=0;l<a.5;l++){2 b=a[l];b.1o=b.k}}o 13(a,b){2 c={"M":Z,"G":[]};9(2 i=0;i<b.5;i++){8(a.u(b[i])>-1){c.M=1e;c.G.10(b[i])}}Q c}o 1c(a,b){2 c=Z;9(2 i=0;i<a.5;i++){2 d=a[i];8(b.u(d)>-1){c=1e}}Q c}',62,89,'||var|hide|table|length|classList|querySelectorAll|if|for||||||||document||row|innerHTML||remove||function||querySelector||msg||indexOf|add|cell||rowList|else|not|content|removeChildNodesHide|io|group|matchResult|matchArray|github|span|light|join|groupList|result|contains|wrj2wmy|split|return|clueCellList|search|clue|searchClue|trim|resetLightFont|clueHTML|url|false|push|cellList|window|indexOfArray|currentGroupContent|header|lightHtml|chapter|href|displayCell|urlExcept|displayChapter|listContainsStr|http|true|target|_blank|class|bar|open|spritiwrj|location|value|referrer|outerHTML|parentNode|searchItem'.split('|'),0,{}))
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 14=5.1x||1d.1v.1f,11=[\'U.J.I\',\'1u.J.I\'];2 V=15(11,14);m(!V){2 y="<p>本页面禁止被内嵌。</p>";y+="<p>请点击下方链接访问源页面。</p>";y+="<p><a 1f=\'1g://U.J.I\' 1t=\'1s\'>悬赏封印查询网页版</a></p>";5.6(".y").u=y;5.6(".y").4.o("3");5.6(".Y-1y").4.8("3");5.6(".E").4.8("3");1d.1q(\'1g://U.J.I\')};v Y(a){2 b=a||5.6("#1p").1o,10=5.k(".E .7 > .7-s-N > .7-s > .7-z");m(b.w(\'*\')>-1||b.w(\'x\')>-1){b=b.R(\'*\').W(\'×\').R(\'x\').W(\'×\')}F(5.6(".E"));12();m(b&&b.1k()){2 c=17(b.1k());19(c,10)}}v 17(a){2 b=[a],S=5.k(".E .7.1c > .7-s-N > .7-s > .7-z.1c-z");q(2 c=0;c<S.j;c++){2 d=S[c],1h=d.u;m(1h.w(a)>-1){2 e=d.1r.k(".7-z")[1].u;m(b.w(e)===-1){b.Z(e)}}}P b}v 19(a,b){q(2 i=0;i<b.j;i++){2 c=b[i],u=c.u,K=13(u,a);m(K.X){c.4.o("3");q(2 d=0;d<K.H.j;d++){2 e=K.H[d],16="<M 1l=\'Q\'>"+e+"</M>";c.u=u.R(e).W(16)}}D m(c.k("M.Q").j===0){c.4.8("3")}}1b()}v 1b(){2 a=5.k(".E .7");q(2 t=0;t<a.j;t++){2 b=a[t],T=b.k(".7-s-N");q(2 g=0;g<T.j;g++){2 c=T[g],G=c.k(".7-s");q(2 r=0;r<G.j;r++){2 d=G[r];m(d.k(".7-z:C(.3)").j===0){d.4.8("3")}D{d.4.o("3");F(d)}}m(c.k(".7-s:C(.3)").j===0){c.4.8("3")}D{c.4.o("3");2 e=c.6(".7-s.1i-1j"),$18=c.k(".7-s:C(.1i-1j)");m(e.4.V("3")&&$18[0].k(".7-z")[0].u.w("回合")===-1){e.4.o("3");F(e)}D{q(2 f=0;f<G.j;f++){2 d=G[f];d.4.o("3");F(d)}}}}m(b.k(".7-s-N:C(.3)").j===0){b.4.8("3")}D{b.4.o("3")}}}v 1m(a){1n(a){O\'n\':2 a=5.6("h.9-n");a.4.o("3");2 b=5.6("h.9-r");b.4.8("3");2 c=5.6("h.9-A");c.4.8("3");2 d=5.6("h.9-B");d.4.8("3");L;O\'r\':2 a=5.6("h.9-n");a.4.8("3");2 b=5.6("h.9-r");b.4.o("3");2 c=5.6("h.9-A");c.4.8("3");2 d=5.6("h.9-B");d.4.8("3");L;O\'A\':2 a=5.6("h.9-n");a.4.8("3");2 b=5.6("h.9-r");b.4.8("3");2 c=5.6("h.9-A");c.4.o("3");2 d=5.6("h.9-B");d.4.8("3");L;O\'B\':2 a=5.6("h.9-n");a.4.8("3");2 b=5.6("h.9-r");b.4.8("3");2 c=5.6("h.9-A");c.4.8("3");2 d=5.6("h.9-B");d.4.o("3");L}}v F(a){2 b=a.k(".3:C(.y)");q(2 n=0;n<b.j;n++){b[n].4.o("3")}}v 12(){2 a=5.k("M.Q");q(2 l=0;l<a.j;l++){2 b=a[l];b.1w=b.u}}v 13(a,b){2 c={"X":1a,"H":[]};q(2 i=0;i<b.j;i++){m(a.w(b[i])>-1){c.X=1e;c.H.Z(b[i])}}P c}v 15(a,b){2 c=1a;q(2 i=0;i<a.j;i++){2 d=a[i];m(b.w(d)>-1){c=1e}}P c}',62,97,'||var|hide|classList|document|querySelector|table|add|hero||||||||div||length|querySelectorAll||if||remove||for||row||innerHTML|function|indexOf||msg|cell|sr|ssr|not|else|content|removeChildNodesHide|rowList|matchArray|io|github|matchResult|break|span|group|case|return|light|split|clueCellList|groupList|wrj2wmy|contains|join|result|search|push|cellList|urlExcept|resetLightFont|indexOfArray|url|listContainsStr|lightHtml|searchClue|currentGroupContent|displayCell|false|displayChapter|clue|window|true|href|http|clueHTML|chapter|header|trim|class|show|switch|value|searchItem|open|parentNode|_blank|target|spritiwrj|location|outerHTML|referrer|bar'.split('|'),0,{}))
 	</script>
 </body></html>
