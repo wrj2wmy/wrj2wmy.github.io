@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html><head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<meta name="title" content="悬赏封印">
 	<meta name="keywords" content="悬赏封印,阴阳师妖怪出处,阴阳师神秘妖怪,阴阳师探索副本,阴阳师御魂副本,阴阳师妖气封印,阴阳师神秘线索">
 	<meta name="description" content="此站点为大家提供手游阴阳师的探索副本、御魂副本、妖气封印、神秘线索等场景的怪物出处及数量，方便您快速省体力的完成悬赏封印任务。">
@@ -12,150 +12,150 @@
 	</style>
 	<link href="css/main.min.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-</head>
+	</head>
 <body>　　
-	<meta name="author" content="Spiritwrj">
+	<meta name="author" content="Wrj2wmy">
 	<title>悬赏封印查询助手</title>
 	<div class="msg hide"></div>
-	<div class="search-banner">
+	<div class="search-banner imgmode">
 		<div class="table-row-group">
 			<div class="table-row search-header">
-				<div class="table-cell button-n" onclick="show('n')">N</div>
-				<div class="table-cell button-r" onclick="show('r')">R</div>
-				<div class="table-cell button-sr" onclick="show('sr')">SR</div>
-				<div class="table-cell button-ssr" onclick="show('ssr')">SSR</div>
-				<div class="table-cell " onclick="search(null)">ALL</div>
+				<div class="table-cell button-n" name="n.N" onclick="show('n')">N</div>
+				<div class="table-cell button-r" name="r.R" onclick="show('r')">R</div>
+				<div class="table-cell button-sr" name="sr.SR" onclick="show('sr')">SR</div>
+				<div class="table-cell button-ssr" name="ssr.SSR" onclick="show('ssr')">SSR</div>
+				<!--<div class="table-cell " onclick="search(null)">ALL</div>-->
 			</div>
 		</div>
 		<div class="hero-n">
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-n" onclick="search('赤舌')">赤舌</div>
-					<div class="table-cell button-n" onclick="search('灯笼鬼')">灯笼鬼</div>
-					<div class="table-cell button-n" onclick="search('盗墓小鬼')">盗墓小鬼</div>
-					<div class="table-cell button-n" onclick="search('寄生魂')">寄生魂</div>
-					<div class="table-cell button-n" onclick="search('涂壁')">涂壁</div>
+					<div class="table-cell button-n" name="04.赤舌" onclick="search('赤舌')">赤舌</div>
+					<div class="table-cell button-n" name="05.灯笼鬼" onclick="search('灯笼鬼')">灯笼鬼</div>
+					<div class="table-cell button-n" name="13.盗墓小鬼" onclick="search('盗墓小鬼')">盗墓小鬼</div>
+					<div class="table-cell button-n" name="06.寄生魂" onclick="search('寄生魂')">寄生魂</div>
+					<div class="table-cell button-n" name="02.涂壁" onclick="search('涂壁')">涂壁</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-n" onclick="search('天邪鬼黄')">天邪鬼黄</div>
-					<div class="table-cell button-n" onclick="search('天邪鬼赤')">天邪鬼赤</div>
-					<div class="table-cell button-n" onclick="search('天邪鬼绿')">天邪鬼绿</div>
-					<div class="table-cell button-n" onclick="search('天邪鬼青')">天邪鬼青</div>
-					<div class="table-cell button-n" onclick="search('唐纸伞妖')">唐纸伞妖</div>
+					<div class="table-cell button-n" name="08.天邪鬼黄" onclick="search('天邪鬼黄')">天邪鬼黄</div>
+					<div class="table-cell button-n" name="07.天邪鬼赤" onclick="search('天邪鬼赤')">天邪鬼赤</div>
+					<div class="table-cell button-n" name="09.天邪鬼绿" onclick="search('天邪鬼绿')">天邪鬼绿</div>
+					<div class="table-cell button-n" name="10.天邪鬼青" onclick="search('天邪鬼青')">天邪鬼青</div>
+					<div class="table-cell button-n" name="11.唐纸伞妖" onclick="search('唐纸伞妖')">唐纸伞妖</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-n" onclick="search('提灯小僧')">提灯小僧</div>
-					<div class="table-cell button-n" onclick="search('帚神')">帚神</div>
-					<div class="table-cell button-n" onclick="search('跳跳犬')">跳跳犬</div>
-					<div class="table-cell button-n" onclick="search('黑豹')">黑豹</div>
+					<div class="table-cell button-n" name="13.提灯小僧" onclick="search('提灯小僧')">提灯小僧</div>
+					<div class="table-cell button-n" name="01.帚神" onclick="search('帚神')">帚神</div>
+					<div class="table-cell button-n" name="28.跳跳犬" onclick="search('跳跳犬')">跳跳犬</div>
+					<div class="table-cell button-n" name="42.黑豹" onclick="search('黑豹')">黑豹</div>
 				</div>
 			</div>
 		</div>
 		<div class="hero-r hide">
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-r" onclick="search('丑时之女')">丑时之女</div>
-					<div class="table-cell button-r" onclick="search('独眼小僧')">独眼小僧</div>
-					<div class="table-cell button-r" onclick="search('饿鬼')">饿鬼</div>
-					<div class="table-cell button-r" onclick="search('管狐')">管狐</div>
-					<div class="table-cell button-r" onclick="search('兵俑')">兵俑</div>
+					<div class="table-cell button-r" name="38.丑时之女" onclick="search('丑时之女')">丑时之女</div>
+					<div class="table-cell button-r" name="37.独眼小僧" onclick="search('独眼小僧')">独眼小僧</div>
+					<div class="table-cell button-r" name="27.饿鬼" onclick="search('饿鬼')">饿鬼</div>
+					<div class="table-cell button-r" name="15.管狐" onclick="search('管狐')">管狐</div>
+					<div class="table-cell button-r" name="20.兵俑" onclick="search('兵俑')">兵俑</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-r" onclick="search('蝴蝶精')">蝴蝶精</div>
-					<div class="table-cell button-r" onclick="search('河童')">河童</div>
-					<div class="table-cell button-r" onclick="search('觉')">觉</div>
-					<div class="table-cell button-r" onclick="search('狸猫')">狸猫</div>
-					<div class="table-cell button-r" onclick="search('鲤鱼精')">鲤鱼精</div>
+					<div class="table-cell button-r" name="29.蝴蝶精" onclick="search('蝴蝶精')">蝴蝶精</div>
+					<div class="table-cell button-r" name="16.河童" onclick="search('河童')">河童</div>
+					<div class="table-cell button-r" name="14.觉" onclick="search('觉')">觉</div>
+					<div class="table-cell button-r" name="26.狸猫" onclick="search('狸猫')">狸猫</div>
+					<div class="table-cell button-r" name="35.鲤鱼精" onclick="search('鲤鱼精')">鲤鱼精</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-r" onclick="search('青蛙瓷器')">青蛙瓷器</div>
-					<div class="table-cell button-r" onclick="search('山童')">山童</div>
-					<div class="table-cell button-r" onclick="search('山兔')">山兔</div>
-					<div class="table-cell button-r" onclick="search('食发鬼')">食发鬼</div>
-					<div class="table-cell button-r" onclick="search('三尾狐')">三尾狐</div>
+					<div class="table-cell button-r" name="39.青蛙瓷器" onclick="search('青蛙瓷器')">青蛙瓷器</div>
+					<div class="table-cell button-r" name="22.山童" onclick="search('山童')">山童</div>
+					<div class="table-cell button-r" name="21.山兔" onclick="search('山兔')">山兔</div>
+					<div class="table-cell button-r" name="34.食发鬼" onclick="search('食发鬼')">食发鬼</div>
+					<div class="table-cell button-r" name="31.三尾狐" onclick="search('三尾狐')">三尾狐</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-r" onclick="search('首无')">首无</div>
-					<div class="table-cell button-r" onclick="search('童男')">童男</div>
-					<div class="table-cell button-r" onclick="search('童女')">童女</div>
-					<div class="table-cell button-r" onclick="search('铁鼠')">铁鼠</div>
-					<div class="table-cell button-r" onclick="search('巫蛊师')">巫蛊师</div>
+					<div class="table-cell button-r" name="19.首无" onclick="search('首无')">首无</div>
+					<div class="table-cell button-r" name="24.童男" onclick="search('童男')">童男</div>
+					<div class="table-cell button-r" name="25.童女" onclick="search('童女')">童女</div>
+					<div class="table-cell button-r" name="03.铁鼠" onclick="search('铁鼠')">铁鼠</div>
+					<div class="table-cell button-r" name="33.巫蛊师" onclick="search('巫蛊师')">巫蛊师</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-r" onclick="search('武士之灵')">武士之灵</div>
-					<div class="table-cell button-r" onclick="search('鸦天狗')">鸦天狗</div>
-					<div class="table-cell button-r" onclick="search('萤草')">萤草</div>
-					<div class="table-cell button-r" onclick="search('雨女')">雨女</div>
-					<div class="table-cell button-r" onclick="search('座敷童子')">座敷童子</div>
+					<div class="table-cell button-r" name="40.武士之灵" onclick="search('武士之灵')">武士之灵</div>
+					<div class="table-cell button-r" name="30.鸦天狗" onclick="search('鸦天狗')">鸦天狗</div>
+					<div class="table-cell button-r" name="18.萤草" onclick="search('萤草')">萤草</div>
+					<div class="table-cell button-r" name="23.雨女" onclick="search('雨女')">雨女</div>
+					<div class="table-cell button-r" name="36.座敷童子" onclick="search('座敷童子')">座敷童子</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-r" onclick="search('椒图')">椒图</div>
-					<div class="table-cell button-r" onclick="search('九命猫')">九命猫</div>
-					<div class="table-cell button-r" onclick="search('跳跳妹妹')">跳跳妹妹</div>
-					<div class="table-cell button-r" onclick="search('跳跳弟弟')">跳跳弟弟</div>
+					<div class="table-cell button-r" name="17.椒图" onclick="search('椒图')">椒图</div>
+					<div class="table-cell button-r" name="32.九命猫" onclick="search('九命猫')">九命猫</div>
+					<div class="table-cell button-r" name="41.跳跳妹妹" onclick="search('跳跳妹妹')">跳跳妹妹</div>
+					<!--<div class="table-cell button-r"  onclick="search('跳跳弟弟')">跳跳弟弟</div>-->
 				</div>
 			</div>
 		</div>
 		<div class="hero-sr hide">
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-sr" onclick="search('二口女')">二口女</div>
-					<div class="table-cell button-sr" onclick="search('凤凰火')">凤凰火</div>
-					<div class="table-cell button-sr" onclick="search('鬼使黑')">鬼使黑</div>
-					<div class="table-cell button-sr" onclick="search('鬼使白')">鬼使白</div>
-					<div class="table-cell button-sr" onclick="search('骨女')">骨女</div>
+					<div class="table-cell button-sr" name="59.二口女"  onclick="search('二口女')">二口女</div>
+					<div class="table-cell button-sr" name="55.凤凰火" onclick="search('凤凰火')">凤凰火</div>
+					<div class="table-cell button-sr" name="54.鬼使黑" onclick="search('鬼使黑')">鬼使黑</div>
+					<div class="table-cell button-sr" name="51.鬼使白" onclick="search('鬼使白')">鬼使白</div>
+					<div class="table-cell button-sr" name="45.骨女" onclick="search('骨女')">骨女</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-sr" onclick="search('鬼女红叶')">鬼女红叶</div>
-					<div class="table-cell button-sr" onclick="search('海坊主')">海坊主</div>
-					<div class="table-cell button-sr" onclick="search('傀儡师')">傀儡师</div>
-					<div class="table-cell button-sr" onclick="search('镰鼬')">镰鼬</div>
-					<div class="table-cell button-sr" onclick="search('孟婆')">孟婆</div>
+					<div class="table-cell button-sr" name="63.鬼女红叶" onclick="search('鬼女红叶')">鬼女红叶</div>
+					<div class="table-cell button-sr" name="56.海坊主" onclick="search('海坊主')">海坊主</div>
+					<div class="table-cell button-sr" name="61.傀儡师" onclick="search('傀儡师')">傀儡师</div>
+					<div class="table-cell button-sr" name="50.镰鼬" onclick="search('镰鼬')">镰鼬</div>
+					<div class="table-cell button-sr" name="47.孟婆" onclick="search('孟婆')">孟婆</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-sr" onclick="search('判官')">判官</div>
-					<div class="table-cell button-sr" onclick="search('犬神')">犬神</div>
-					<div class="table-cell button-sr" onclick="search('食梦貘')">食梦貘</div>
-					<div class="table-cell button-sr" onclick="search('跳跳哥哥')">跳跳哥哥</div>
-					<div class="table-cell button-sr" onclick="search('桃花妖')">桃花妖</div>
+					<div class="table-cell button-sr" name="43.判官" onclick="search('判官')">判官</div>
+					<div class="table-cell button-sr" name="46.犬神" onclick="search('犬神')">犬神</div>
+					<div class="table-cell button-sr" name="57.食梦貘" onclick="search('食梦貘')">食梦貘</div>
+					<div class="table-cell button-sr" name="62.跳跳哥哥" onclick="search('跳跳哥哥')">跳跳哥哥</div>
+					<div class="table-cell button-sr" name="53.桃花妖" onclick="search('桃花妖')">桃花妖</div>
 				</div>
 			</div>
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-sr" onclick="search('雪女')">雪女</div>
-					<div class="table-cell button-sr" onclick="search('吸血姬')">吸血姬</div>
-					<div class="table-cell button-sr" onclick="search('樱花妖')">樱花妖</div>
-					<div class="table-cell button-sr" onclick="search('妖琴师')">妖琴师</div>
-					<div class="table-cell button-sr" onclick="search('妖狐')">妖狐</div>
+					<div class="table-cell button-sr" name="49.雪女" onclick="search('雪女')">雪女</div>
+					<div class="table-cell button-sr" name="52.吸血姬" onclick="search('吸血姬')">吸血姬</div>
+					<div class="table-cell button-sr" name="60.樱花妖" onclick="search('樱花妖')">樱花妖</div>
+					<div class="table-cell button-sr" name="58.妖琴师" onclick="search('妖琴师')">妖琴师</div>
+					<div class="table-cell button-sr" name="44.妖狐" onclick="search('妖狐')">妖狐</div>
 				</div>
 			</div>
 		</div>
 		<div class="hero-ssr hide">
 			<div class="table-row-group">
 				<div class="table-row">
-					<div class="table-cell button-ssr" onclick="search('茨木童子')">茨木童子</div>
-					<div class="table-cell button-ssr" onclick="search('大天狗')">大天狗</div>
-					<div class="table-cell button-ssr" onclick="search('荒川之主')">荒川之主</div>
-					<div class="table-cell button-ssr" onclick="search('酒吞童子')">酒吞童子</div>
-					<div class="table-cell button-ssr" onclick="search('阎魔')">阎魔</div>
+					<div class="table-cell button-ssr" name="66.茨木童子" onclick="search('茨木童子')">茨木童子</div>
+					<div class="table-cell button-ssr" name="65.大天狗" onclick="search('大天狗')">大天狗</div>
+					<div class="table-cell button-ssr" name="68.荒川之主" onclick="search('荒川之主')">荒川之主</div>
+					<div class="table-cell button-ssr" name="67.酒吞童子" onclick="search('酒吞童子')">酒吞童子</div>
+					<div class="table-cell button-ssr" name="64.阎魔" onclick="search('阎魔')">阎魔</div>
 				</div>
 			</div>
 		</div>
@@ -163,6 +163,13 @@
 	<div class="search-bar">
 		<input class="search-control" placeholder="输入线索或者妖怪名字" id="searchItem" oninput="search()">
 		<span class="icon search"></span>
+	</div>
+	<div class="menu-bar show-menu" onclick="toggleMenu(this)">
+		<span class="menu-icon"></span>
+	</div>
+	<div class="menu-list hide">
+		<div class="menu-item" onclick="toggle('textmode')">文字</div>
+		<div class="menu-item" onclick="toggle('imgmode')">图片</div>
 	</div>
 	<div class="content">
 		<div class="table explore">
@@ -1993,7 +2000,7 @@
 		</div>
 
 		<div class="table">
-			<div class="table-caption">雨女秘闻</div>
+			<div class="table-caption">雨女的等候</div>
 
 			<div class="table-row-group chapter">
 				<div class="table-row chapter-header">
@@ -2182,6 +2189,410 @@
 				<div class="table-row">
 					<div class="table-cell">三回合</div>
 					<div class="table-cell">青蛙瓷器×5 雨女×1</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="table">
+			<div class="table-caption">寻找鬼王</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">所有鬼王</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">一回合</div>
+					<div class="table-cell">涂壁×3 天邪鬼赤×1</div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">二回合</div>
+					<div class="table-cell">帚神×3 涂壁×1</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">兵俑</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">兵俑×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">丑时之女</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">管狐×3 丑时之女×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">管狐</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">管狐×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">蝴蝶精</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">蝴蝶精×3 巫蛊师×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">河童</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">河童×3 鲤鱼精×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">鲤鱼精</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">鲤鱼精×3 河童×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">三尾狐</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">三尾狐×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">童男</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">童男×1 童女×2 黑晴明×1 天邪鬼绿×2</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">童女</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">童女×1 童男×2 黑晴明×1 天邪鬼绿×2</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">跳跳妹妹</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">跳跳妹妹×3 跳跳哥哥×1 跳跳弟弟×1</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">萤草</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">萤草×3 觉×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">鸦天狗</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">鸦天狗×3 天邪鬼绿×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">座敷童子</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">座敷童子×3 涂壁×2 提灯小僧×1</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">白狼</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">白狼×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">凤凰火</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">凤凰火×3 兵俑×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">姑获鸟</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">座敷童子×3 姑获鸟×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">鬼女红叶</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">鬼女红叶×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">惠比寿</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">惠比寿×4 铁鼠×2</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">傀儡师</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">傀儡师×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">镰鼬</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">镰鼬×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">孟婆</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">判官×4 孟婆×2</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">判官</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">阎魔×2 判官×4</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">青姬</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">青姬×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">食梦貘</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">食梦貘×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">桃花妖</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">天邪鬼绿×3 桃花妖×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">吸血姬</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">吸血姬×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">妖狐</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">妖狐×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">妖琴师</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">妖琴师×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">茨木童子</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">雪女×3 茨木童子×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">大天狗</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">大天狗×3 雪女×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">荒川之主</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">荒川之主×2 天邪鬼青×4</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">酒吞童子</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">鬼女红叶×2 茨木童子×1 酒吞童子×3</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">青行灯</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">青行灯×3 小鹿×1 鬼使黑×1 鬼使白×1</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">小鹿男</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">小鹿男×6</div>
+				</div>
+			</div>
+
+			<div class="table-row-group chapter">
+				<div class="table-row chapter-header">
+					<div class="table-cell">阎魔</div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell">三回合</div>
+					<div class="table-cell">阎魔×3 判官×3</div>
 				</div>
 			</div>
 		</div>
@@ -2413,10 +2824,9 @@
 	<footer>
 		<a class="suggest" href="#" target="_blank">反馈与建议</a>
 		<span class="copy-right">©&nbsp;
-			<a href="wrj2wmy.github.io" target="_blank">Updated by Wrj2wmy</a>
+			<a href="#" target="_blank">spiritwrj</a>
 		</span>
-		<span class="hide">分享学习之用。</span>
+		<span class="hide">版权所有，禁止任何形式的二次开发及发布，侵权必究。</span>
 	</footer>
 	<script src="js/app.min.js" type="text/javascript"></script>
-</body>
-</html>
+</body></html>
